@@ -1,0 +1,132 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Плановые и аварийные работы | Подробная информация{% endblock %}
+
+{% block page_content %}
+
+    <div class="row">
+        <div class="col-md-4">
+
+            <div class="card card-info">
+                <div class="card-header">
+                    <h3 class="card-title">Horizontal Form</h3>
+                </div>
+                <!-- /.card-header -->
+                <!-- form start -->
+                <form class="form-horizontal">
+                    <div class="card-body">
+                        <div class="form-group row">
+                            <label for="field-1" class="col-sm-4 col-form-label">Группа</label>
+                            <div class="col-sm-8">
+                               ---
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="field-1" class="col-sm-4 col-form-label">Краткое описание вопроса</label>
+                            <div class="col-sm-8">
+                                ---
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="field-1" class="col-sm-4 col-form-label">Дата/Время обращения</label>
+                            <div class="col-sm-8">
+                                ---
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="field-1" class="col-sm-4 col-form-label">Дата/Время обновления</label>
+                            <div class="col-sm-8">
+                                ---
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="field-1" class="col-sm-4 col-form-label">Статус</label>
+                            <div class="col-sm-8">
+                                ---
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.card-body -->
+                    <div class="card-footer">
+                        <div class="btn-group-vertical btn-block">
+                            <a href="{{ path('job-edit') }}" class="btn btn-default ">Редактировать</a>
+                            <a href="{{ path('job-dialog-add') }}" class="btn btn-default ">Дать ответ</a>
+                            <a href="{{ path('job-owner-add') }}" class="btn btn-default ">Добавить собственника</a>
+                            <a href="{{ path('job-piece-add') }}" class="btn btn-default ">Добавить участок</a>
+                            <a href="{{ path('job-status-edit') }}" class="btn btn-default ">Начать работы</a>
+                            <a href="{{ path('job-status-edit') }}" class="btn btn-default ">Закрыть заявку</a>
+                            <a href="{{ path('job-delete') }}" class="btn btn-danger float-right">Удалить</a>
+                        </div>
+                    </div>
+                    <!-- /.card-footer -->
+                </form>
+            </div>
+
+        </div>
+        <div class="col-md-8">
+            <div class="card card-outline card-info">
+                <div class="card-header">
+                    <h3 class="card-title">
+                        Владельцы
+                    </h3>
+                </div>
+            </div>
+            <div class="card card-outline card-info">
+                <div class="card-header">
+                    <h3 class="card-title">
+                        Участки
+                    </h3>
+                </div>
+            </div>
+            <div class="card card-outline card-info">
+                <div class="card-header">
+                    <h3 class="card-title">
+                        Документы
+                    </h3>
+                </div>
+                <div class="card-body p-0">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th>Название файла</th>
+                            <th>Дата/Время создания</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>---</td>
+                            <td>---</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="card card-outline card-info">
+                <div class="card-header">
+                    <h3 class="card-title">
+                        Диалоги
+                    </h3>
+                </div>
+                <div class="card-body p-0">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th>Автор (Собственник/Председатель/Оператор)</th>
+                            <th>Дата/Время создания</th>
+                            <th>Вопрос</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>---</td>
+                            <td>---</td>
+                            <td>---</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

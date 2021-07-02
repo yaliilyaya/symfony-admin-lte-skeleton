@@ -1,0 +1,70 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Название{% endblock %}
+
+{% block page_content %}
+
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">Название</h3>
+            <div class="card-tools">
+                <a class="btn btn-success btn-sm" href="#" target="_blank" >Действие</a>
+            </div>
+        </div>
+
+        <div class="card-body">
+
+            <div class="tab-content" id="custom-content-below-tabContent">
+                <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th>Название 1</th>
+                            <th>Название 2</th>
+                            <th>Название 3</th>
+                            <th>Дата/Время </th>
+                            <th>Статус</th>
+                            <th>комментарий</th>
+                            <th width="80">Действие</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>--</td>
+                            <td> ---</td>
+                            <td> ---</td>
+                            <td> ---</td>
+                            <td> ---</td>
+                            <td> ---</td>
+                            <td>
+                                <div class="btn-group">
+                                    <a href="#" target="_blank"  class="btn btn-info btn-sm">
+                                        <span class="fas fa-eye"></span>
+                                    </a>
+                                    <a href="#" target="_blank"  class="btn btn-info btn-sm">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-info dropdown-toggle dropdown-icon btn-sm"
+                                                data-toggle="dropdown">
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#" target="_blank" >Дать ответ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby=""></div>
+                <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby=""></div>
+            </div>
+
+        </div>
+
+    </div>
+{% endblock %}
