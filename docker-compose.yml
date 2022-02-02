@@ -7,8 +7,6 @@ services:
     build:
       context: dockerfile/app
       dockerfile: Dockerfile
-#    image: digitalocean.com/php
-    restart: unless-stopped
     tty: true
     environment:
       SERVICE_NAME: app
@@ -21,7 +19,6 @@ services:
   #Nginx Service
   webserver:
     image: nginx:alpine
-    restart: unless-stopped
     tty: true
     ports:
       - ${WEBSERVICE_HTTP_PORT}:80
